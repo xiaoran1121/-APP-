@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PassWordFragment"
+    android:id="@+id/password_fr">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_height="400dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/m_id"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:text="用户ID为："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/m_name"
+                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    android:text="姓名："
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/m_gender"
+                    android:layout_width="100dp"
+                    android:text="性别："
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/m_pass"
+                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    android:text="是否具有通行资格："
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/query"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="查询用户信息"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_selector"/>
+                <Button
+                    android:id="@+id/password_check"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="密码验证"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/open"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="开门"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_selector"/>
+                <Button
+                    android:id="@+id/close"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="关门"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:padding="30dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="MQTT连接状态："
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/m_mqtt"
+                    android:layout_width="wrap_content"
+                    android:text=" "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</FrameLayout>

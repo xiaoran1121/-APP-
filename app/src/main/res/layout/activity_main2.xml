@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FaceRecognitionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#078307"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="基于人脸识别的小区门禁系统"
+                android:textSize="24sp"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FAF6F6"
+            android:orientation="vertical"
+            android:layout_height="710dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="20dp">
+                    <ImageView
+                        android:id="@+id/m_im_1"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_height="300dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30sp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/m_name"
+                        android:layout_width="wrap_content"
+                        android:text="姓名："
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/m_pass"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:text="是否具有通行资格："
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/query"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:text="查询用户信息"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_selector"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/open"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:text="开门"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_selector"/>
+                    <Button
+                        android:id="@+id/close"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:text="关门"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_selector"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:padding="30dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="MQTT连接状态："
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/m_mqtt"
+                        android:layout_width="wrap_content"
+                        android:text=" "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="我的"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="我的"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="我的"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="我的"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
